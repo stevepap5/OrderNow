@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_xwris_access_from_table_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\xwris_access_from_table_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_extra_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\extra_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_new_printer_item.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_new_printer_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_restore_user_password.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_restore_user_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_items_access_from_individual_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_menu_items_access_from_individual_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_store.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_login_store.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_extra_access_from_table_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\extra_access_from_table_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_date_and_time.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_date_and_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_category.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_menu_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar_bottom.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\toolbar_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_xwris_menu_item_from_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_xwris_menu_item_from_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_paid_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_paid_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_item_row_access_from_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\menu_item_row_access_from_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up_store.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_sign_up_store.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_item_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\menu_item_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_print_black_24dp.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_print_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tziros.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\fragment_tziros.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_app_symbol.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\app_symbol.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_kouber_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\kouber_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up_user.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_sign_up_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_xwris_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\xwris_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_printer_item_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\printer_item_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_table_individual.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_table_individual.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_printers.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_printers.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tables.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\fragment_tables.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_item_to_table_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\add_item_to_table_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_check_box_outline_blank_24.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_baseline_check_box_outline_blank_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_delete_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_delete_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_individual_table_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\individual_table_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_kouber_fragments.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\kouber_fragments.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_administrator_choices.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_administrator_choices.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tables_with_fragment.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_tables_with_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_category_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\menu_category_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_send_notification.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\menu\\menu_send_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_table_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_table_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_extra_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_extra_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_extra_menu_item.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_extra_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_xwris_menu_item.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_xwris_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_choices.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_user_choices.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_kouber.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_kouber.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_user.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_login_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_category_row_from_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\menu_category_row_from_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_orofoi.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_orofoi.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sima.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\sima.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tziros_with_fragment.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_tziros_with_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_xwris.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\xwris.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_attach_money.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_attach_money.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_extra_menu_item_access_from_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_extra_menu_item_access_from_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_tziros_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\tziros_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_restaurant.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_restaurant.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\color_primarybluelight.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\color\\primarybluelight.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chart_tziros.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\fragment_chart_tziros.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_new_menu_item.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_new_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_circle_black_24dp.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_add_circle_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_orofoi_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\orofoi_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_xwris_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_xwris_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chart.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\fragment_chart.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_partial_paid_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_partial_paid_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_empty_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_empty_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_table_row.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\table_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_items.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_menu_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_orofoi_dialog.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_orofoi_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_category_access_from_individual_table.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_menu_category_access_from_individual_table.xml"
+    }
+]

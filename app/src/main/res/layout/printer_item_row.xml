@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kouberCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginRight="4sp"
+        android:backgroundTint="@color/whiteToGrey">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/printerIpAddressXml"
+                style="@style/Widget.MaterialComponents.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/primaryBlue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/portXml"
+                style="@style/Widget.MaterialComponents.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/printerIpAddressXml"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/primaryBlue"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

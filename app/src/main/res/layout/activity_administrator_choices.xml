@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdministratorChoicesActivity.AdministratorChoicesActivity">
+
+    <include
+        android:id="@+id/toolbarAdministratorChoice"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tablesXml"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_below="@id/toolbarAdministratorChoice"
+        android:text="@string/tables_greek" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menuXml"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablesXml"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="@string/menu_greek" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tzirosXml"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuXml"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="@string/tziros_greek" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proiontaXml"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tzirosXml"
+        android:layout_margin="10sp"
+        android:text="@string/kouber_greek" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/orofoiXml"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proiontaXml"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="@string/orofoi_greek" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/printersButtonXml"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orofoiXml"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="@string/printers_greek" />
+
+
+
+</RelativeLayout>

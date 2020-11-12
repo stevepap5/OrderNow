@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stefanos.order">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sima"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sima"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PrintersActivity.PrintersActivity"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".UserChoices.UserChoicesActivity"
+            android:parentActivityName=".LoginUserActivity.LoginUserActivity" />
+        <activity
+            android:name=".DateAndTime.DateAndTimeActivity"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".TzirosActivity.TzirosActivityWithFragment"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".TablesActivity.TablesActivityWithFragment"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".OrofoiActivity.OrofoiActivity"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".KouberActivity.KouberActivityWithFragment"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".XwrisFromTableActivity.XwrisMenuItemFromTableActivity"
+            android:parentActivityName=".MenuItemFromTableActivity.MenuItemsAccessFromTableActivity" />
+        <activity
+            android:name=".ExtraFromTableActivity.ExtraMenuItemAccessFromTableActivity"
+            android:parentActivityName=".MenuItemFromTableActivity.MenuItemsAccessFromTableActivity" />
+        <activity
+            android:name=".XwrisActivity.XwrisMenuItemActivity"
+            android:parentActivityName=".MenuItemActivity.MenuItemsActivity" />
+        <activity
+            android:name=".ExtraActivity.ExtraMenuItemActivity"
+            android:parentActivityName=".MenuItemActivity.MenuItemsActivity" />
+        <activity
+            android:name=".MenuItemFromTableActivity.MenuItemsAccessFromTableActivity"
+            android:parentActivityName=".TableIndividualActivity.TableIndividualActivity" />
+        <activity
+            android:name=".MenuCategoryFromTableActivity.MenuCategoryAccessFromTableActivity"
+            android:parentActivityName=".TableIndividualActivity.TableIndividualActivity" />
+        <activity
+            android:name=".RestoreUserPasswordActivity.RestoreUserPasswordActivity"
+            android:parentActivityName=".LoginUserActivity.LoginUserActivity" />
+        <activity
+            android:name=".MenuItemActivity.MenuItemsActivity"
+            android:parentActivityName=".MenuCategory.MenuCategoryActivity" />
+        <activity
+            android:name=".MenuCategory.MenuCategoryActivity"
+            android:parentActivityName=".AdministratorChoicesActivity.AdministratorChoicesActivity" />
+        <activity
+            android:name=".TableIndividualActivity.TableIndividualActivity"
+            android:parentActivityName=".TablesActivity.TablesActivityWithFragment" />
+        <activity
+            android:name=".AdministratorChoicesActivity.AdministratorChoicesActivity"
+            android:parentActivityName=".LoginUserActivity.LoginUserActivity" />
+        <activity android:name=".SignUpStoreActivity.SignUpStoreActivity" />
+        <activity android:name=".LoginStoreActivity.LoginStoreActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpUserActivity.SignUpUserActivity"
+            android:parentActivityName=".LoginUserActivity.LoginUserActivity" />
+        <activity
+            android:name=".LoginUserActivity.LoginUserActivity"
+            android:parentActivityName=".LoginStoreActivity.LoginStoreActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_restaurant" />
+    </application>
+
+</manifest>

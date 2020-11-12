@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_quantity"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_margin="10sp"
+        android:id="@+id/quantityItemTextLayout"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantityItemXml"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/extra"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_margin="10sp"
+        android:id="@+id/addExtraTextLayout"
+        android:layout_below="@id/quantityItemTextLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addExtraXml"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yesButtonXml"
+        android:layout_below="@id/addExtraTextLayout"
+        android:layout_alignParentStart="true"
+        android:text="@string/yes"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_margin="10sp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButtonItemXml"
+        android:layout_below="@id/addExtraTextLayout"
+        android:layout_alignParentEnd="true"
+        android:text="@string/cancel"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_margin="10sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginUserActivity.LoginUserActivity"
+   >
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbarLoginUser"
+        >
+
+    </include>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_username_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_margin="10sp"
+        android:id="@+id/usernameXml"
+        android:layout_below="@+id/toolbarLoginUser"
+
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameEdit"
+          />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTextXml"
+        android:layout_below="@+id/usernameXml"
+        android:hint="@string/enter_password_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_margin="10sp"
+        app:endIconMode="password_toggle"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordUserEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:id="@+id/loginButtonXml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTextXml"
+        android:text="@string/login_greek"
+        app:backgroundTint="@color/primaryBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/signUpButtonXml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButtonXml"
+        android:text="@string/sign_up_user_greek"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"/>
+
+
+    <CheckBox
+        android:id="@+id/rememberPasswordUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/remember_password_greek"
+        android:layout_margin="10sp">
+
+    </CheckBox>
+
+
+
+</RelativeLayout>

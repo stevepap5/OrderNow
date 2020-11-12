@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/printButton"
+        android:icon="@drawable/ic_print_black_24dp"
+        android:title="@string/print_button"
+        />
+    <item
+        android:id="@+id/sumTitleToolbar"
+        android:title="@string/sunolo_greek"
+
+        />
+    <item
+        android:id="@+id/paymentButton"
+        android:icon="@drawable/ic_attach_money"
+        android:title="@string/payment_greek"
+    />
+</menu>

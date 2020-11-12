@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginStoreActivity.LoginStoreActivity">
+
+    <include
+        android:id="@+id/toolbarLoginStore"
+        layout="@layout/toolbar">
+
+    </include>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/storeNameTextLayoutXml"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLoginStore"
+        android:layout_margin="10sp"
+        android:hint="@string/enter_store_name_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterStoreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordStoreTextXml"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storeNameTextLayoutXml"
+        android:layout_margin="10sp"
+        android:hint="@string/enter_password_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+        app:endIconMode="password_toggle"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterPasswordLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginStoreButtonXml"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordStoreTextXml"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"
+        android:text="@string/login_greek"
+        app:backgroundTint="@color/primaryBlue" />
+
+    <CheckBox
+        android:id="@+id/rememberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/remember_password_greek"
+        android:layout_margin="10sp"
+        android:layout_alignParentBottom="true">
+
+    </CheckBox>
+
+
+
+</RelativeLayout>

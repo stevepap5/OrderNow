@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginUserActivity.LoginUserActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpUserActivity.SignUpUserActivity">
+
+      <include layout="@layout/toolbar"
+          android:id="@+id/toolbarSignUpUser"
+          >
+
+      </include>
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/enter_your_username_greek"
+          app:boxStrokeColor="@color/primaryBlue"
+          android:layout_margin="10sp"
+          android:layout_below="@+id/toolbarSignUpUser"
+          android:id="@+id/usernameTextXml"
+
+          >
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/usernameUserEditText"/>
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_email_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_below="@id/usernameTextXml"
+        android:layout_margin="10sp"
+        android:id="@+id/usernameXml"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userEmailEditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_below="@id/usernameXml"
+        android:layout_margin="10sp"
+        android:id="@+id/passwordSignUpTextXml"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/userPasswordEditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_your_password_greek"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_below="@id/passwordSignUpTextXml"
+        android:layout_margin="10sp"
+        android:id="@+id/confirmPasswordSignUpTextLayout"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/userConfirmPasswordEditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+      <RadioGroup
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checkedButton="@+id/userRadioButton"
+          android:orientation="vertical"
+          android:layout_margin="10sp"
+          android:id="@+id/userOrAdministratorGroup"
+          android:layout_below="@id/confirmPasswordSignUpTextLayout">
+          <RadioButton
+              android:id="@+id/administratorRadioButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/administrator_greek"
+              android:textSize="15sp"/>
+          <RadioButton
+              android:id="@+id/userRadioButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/user_greek"
+              android:textSize="15sp"/>
+      </RadioGroup>
+
+      <com.google.android.material.button.MaterialButton
+          style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+          android:id="@+id/signUpUserButtonXml"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/userOrAdministratorGroup"
+          android:text="@string/sign_up_user_greek"
+          app:backgroundTint="@color/primaryBlue"
+          android:layout_centerHorizontal="true"
+          android:layout_margin="20sp"/>
+
+  </RelativeLayout>
+
+</ScrollView>

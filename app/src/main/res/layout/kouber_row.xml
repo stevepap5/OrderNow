@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4sp"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        android:id="@+id/kouberCardView"
+        android:backgroundTint="@color/whiteToGrey">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintId"
+            >
+
+            <TextView
+                android:id="@+id/quantityKouberXml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/constraintId"
+                app:layout_constraintRight_toLeftOf="@id/nameKouberXml"
+                app:layout_constraintBottom_toBottomOf="@id/constraintId"
+                app:layout_constraintTop_toTopOf="@id/constraintId"
+                android:layout_marginStart="10sp"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/primaryBlue"
+                style="@style/Widget.MaterialComponents.TextView"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/nameKouberXml"
+                style="@style/Widget.MaterialComponents.TextView"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/primaryBlue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintId"
+                app:layout_constraintLeft_toRightOf="@id/quantityKouberXml"
+                app:layout_constraintRight_toLeftOf="@id/priceKouberXml"
+                app:layout_constraintTop_toTopOf="@id/constraintId"
+
+                app:layout_constraintVertical_bias="0.47" />
+
+            <TextView
+                android:id="@+id/priceKouberXml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/primaryBlue"
+                android:textSize="15sp"
+                style="@style/Widget.MaterialComponents.TextView"
+                app:layout_constraintBottom_toBottomOf="@id/constraintId"
+                app:layout_constraintLeft_toRightOf="@id/nameKouberXml"
+                app:layout_constraintRight_toRightOf="@id/constraintId"
+                app:layout_constraintTop_toTopOf="@id/constraintId"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

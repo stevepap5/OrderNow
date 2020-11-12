@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10sp">
+
+    <TextView
+        android:id="@+id/numberOfItemsTotalDelete"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textSize="15sp"
+        android:text="@string/number_of_items_greek"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalSumDelete"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textSize="15sp"
+        android:text="@string/sunolo_greek"
+        app:layout_constraintTop_toBottomOf="@id/numberOfItemsTotalDelete" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/yesButtonPaidDialogDelete"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="@string/delete_greek"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalSumDelete" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/noButtonPaidDialogDelete"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="@string/cancel_greek"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalSumDelete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

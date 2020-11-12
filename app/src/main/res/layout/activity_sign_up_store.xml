@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpStoreActivity.SignUpStoreActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signUpStoreText"
+        android:text="@string/sign_up_store"
+        android:textColor="@color/primaryBlue"
+        android:textSize="20sp"
+        android:layout_margin="10sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_store"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_margin="10sp"
+        android:layout_below="@+id/signUpStoreText"
+        android:id="@+id/nameStoreTextXml"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterStoreNameXml"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_email"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_below="@id/nameStoreTextXml"
+        android:layout_margin="10sp"
+        android:id="@+id/usernameXml"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterEmailStoreXml"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordStoreTextXml"
+        android:layout_below="@+id/usernameXml"
+        android:hint="@string/enter_password"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_margin="10sp"
+        app:passwordToggleEnabled="true"
+        app:endIconMode="password_toggle"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterPasswordStoreXml"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_your_password"
+        app:boxStrokeColor="@color/primaryBlue"
+        android:layout_below="@id/passwordStoreTextXml"
+        android:layout_margin="10sp"
+        android:id="@+id/confirmPasswordSignUpTextLayout"
+        app:passwordToggleEnabled="true"
+        app:endIconMode="password_toggle"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPasswordStoreXml"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:id="@+id/signUpStoreButtonXml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPasswordSignUpTextLayout"
+        android:text="@string/sign_up"
+        app:backgroundTint="@color/primaryBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"/>
+
+</RelativeLayout>

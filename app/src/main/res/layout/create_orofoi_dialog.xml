@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createOrofoTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="5sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/createOrofoXml"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createPriorityTextInputLayout"
+        android:hint="@string/priority_number_greek"
+        android:layout_below="@id/createOrofoTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="5sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/createOrofoPriorityXml"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_greek"
+        android:id="@+id/saveButtonXml"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_below="@+id/createPriorityTextInputLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:layout_margin="10sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButtonXml"
+        android:layout_below="@id/createPriorityTextInputLayout"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20sp"
+        android:text="@string/cancel_greek"
+        android:layout_margin="10sp"/>
+
+
+
+</RelativeLayout>

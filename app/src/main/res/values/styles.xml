@@ -1,0 +1,21 @@
+<resources>
+
+
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- ... -->
+
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorError">@color/errorColor</item>
+
+
+    </style>
+
+    <style name="materialButtonTable" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/primaryBlueLight</item>
+    </style>
+
+
+</resources>
