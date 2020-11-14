@@ -1,15 +1,23 @@
 package com.stefanos.order.TzirosActivity;
 
 import android.content.SharedPreferences;
+import android.drm.DrmManagerClient;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.stefanos.order.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -40,8 +48,7 @@ public class ChartFragmentTziros extends Fragment {
     private View view;
     private BarChart barChart;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
+    private TzirosAdapter tzirosAdapter;
     public ChartFragmentTziros() {
         // Required empty public constructor
     }
@@ -70,64 +77,67 @@ public class ChartFragmentTziros extends Fragment {
         barChart = view.findViewById(R.id.chart);
 
 
+
+
         String storeName = readPreferences();
 
         CollectionReference tzirosRef = db.collection("store").document(storeName).collection("tziros");
-        tzirosRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+
+
+        tzirosRef.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if(task.isSuccessful()){
+            public void onEvent(@Nullable QuerySnapshot task, @Nullable FirebaseFirestoreException error) {
+                ArrayList<String> xList=new ArrayList<>();
+                ArrayList<Float> yList=new ArrayList<>();
 
-                    final ArrayList<String> xList=new ArrayList<>();
-                    ArrayList<Float> yList=new ArrayList<>();
+                for(QueryDocumentSnapshot documentSnapshot: Objects.requireNonNull(task)){
 
-                    for(DocumentSnapshot documentSnapshot: Objects.requireNonNull(task.getResult())){
+                    if (documentSnapshot!=null) {
+                        double yVariable=Double.parseDouble(String.valueOf(documentSnapshot.get("sum")));
+                        String xVariable=String.valueOf(documentSnapshot.get("dayOfTziros"))+"/"+String.valueOf(documentSnapshot.get("monthOfTziros"));
 
-                        if (documentSnapshot!=null) {
-                            double yVariable=Double.parseDouble(String.valueOf(documentSnapshot.get("sum")));
-                            String xVariable=String.valueOf(documentSnapshot.get("dayOfTziros"))+"/"+String.valueOf(documentSnapshot.get("monthOfTziros"));
-
-                            xList.add(xVariable);
-                            yList.add((float) yVariable);
-                        }
-
+                        xList.add(xVariable);
+                        yList.add((float) yVariable);
                     }
 
-                    final String[] dateVar = new String[xList.size()];
-                    ArrayList<BarEntry> yEntrys = new ArrayList<>();
-                    for(int i = 0; i < yList.size(); i++){
-
-                        yEntrys.add(new BarEntry( i,yList.get(yList.size()-1-i)));
-                        dateVar[i]=xList.get(yList.size()-1-i);
-                    }
-
-
-                    BarDataSet barDataSet=new BarDataSet(yEntrys,"Τζίρος");
-
-                    XAxis xAxis = barChart.getXAxis();
-                    xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-                    xAxis.setTextSize(15f);
-                    xAxis.setGranularity(1f);
-                    xAxis.setDrawAxisLine(true);
-                    xAxis.setDrawGridLines(false);
-                    xAxis.setValueFormatter(new ValueFormatter() {
-                        @Override
-                        public String getAxisLabel(float value, AxisBase axis) {
-                            return dateVar[(int)value];
-                        }
-                    });
-
-                    BarData barData = new BarData(barDataSet);
-
-
-                    barChart.setData(barData);
-                    barChart.invalidate();
                 }
+
+                final String[] dateVar = new String[xList.size()];
+                ArrayList<BarEntry> yEntrys = new ArrayList<>();
+                for(int i = 0; i < yList.size(); i++){
+
+                    yEntrys.add(new BarEntry( i,yList.get(yList.size()-1-i)));
+                    dateVar[i]=xList.get(yList.size()-1-i);
+                    Log.i("ydata", String.valueOf(yList.get(i)));
+                }
+
+
+                BarDataSet barDataSet=new BarDataSet(yEntrys,"Τζίρος");
+
+                XAxis xAxis = barChart.getXAxis();
+                xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+                xAxis.setTextSize(15f);
+                xAxis.setGranularity(1f);
+                xAxis.setDrawAxisLine(true);
+                xAxis.setDrawGridLines(false);
+                xAxis.setValueFormatter(new ValueFormatter() {
+                    @Override
+                    public String getAxisLabel(float value, AxisBase axis) {
+                        return dateVar[(int)value];
+                    }
+                });
+
+                BarData barData = new BarData(barDataSet);
+
+
+                barChart.setData(barData);
+                barChart.invalidate();
             }
+
+
         });
         return view;
     }
-
 
 
 
