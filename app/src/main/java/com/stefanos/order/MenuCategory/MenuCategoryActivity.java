@@ -101,17 +101,58 @@ public class MenuCategoryActivity extends AppCompatActivity {
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
 
-                if (menuCategoryAdapter.getItem(viewHolder.getAdapterPosition()).getStatus().equals("")) {
-                    menuCategoryAdapter.deleteItem(viewHolder.getAdapterPosition());
-                } else {
-                    Toast.makeText(MenuCategoryActivity.this,"Η κατηγορία στο μενού πρέπει να είναι άδεια για να την σβήσεις",Toast.LENGTH_LONG).show();
-                    menuCategoryAdapter.notifyItemChanged(viewHolder.getAdapterPosition());
-                }
-
+                    deleteMenuCategory(MenuCategoryAdapter.MenuCategoryHolder.textView.getText().toString());
             }
         }).attachToRecyclerView(recyclerView);
 
         setFloatingActionButtonMethod();
+    }
+
+    private void deleteMenuCategory(final String menuCategoryName) {
+        final String storeName=readPreferences();
+        CollectionReference tablesRef=db.collection("store").document(storeName).
+                collection("menuCategory").document(menuCategoryName).collection("menuItems");
+        tablesRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()){
+                    for(DocumentSnapshot menuItemdocumentSnapshot:task.getResult()){
+                        CollectionReference tablesRefDeleteExtra=db.collection("store").document(storeName).
+                                collection("menuCategory").document(menuCategoryName).
+                                collection("menuItems").
+                                document(String.valueOf(menuItemdocumentSnapshot.get("nameMenuItem"))).collection(String.valueOf(menuItemdocumentSnapshot.get("nameMenuItem"))+"extra");
+                        tablesRefDeleteExtra.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                  if(task.isSuccessful()){
+                                      for(DocumentSnapshot extradocumentSnapshot1:task.getResult()){
+                                          extradocumentSnapshot1.getReference().delete();
+                                      }
+                                  }
+                            }
+                        });
+                        CollectionReference tablesRefDeleteXwris=db.collection("store").document(storeName).
+                                collection("menuCategory").document(menuCategoryName).
+                                collection("menuItems").
+                                document(String.valueOf(menuItemdocumentSnapshot.get("nameMenuItem"))).collection(String.valueOf(menuItemdocumentSnapshot.get("nameMenuItem"))+"xwris");
+                        tablesRefDeleteXwris.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if(task.isSuccessful()){
+                                    for(DocumentSnapshot xwrisdocumentSnapshot1:task.getResult()){
+                                        xwrisdocumentSnapshot1.getReference().delete();
+                                    }
+                                }
+                            }
+                        });
+                        menuItemdocumentSnapshot.getReference().delete();
+                    }
+                }
+            }
+        });
+        DocumentReference menuCategorytablesRef=db.collection("store").document(storeName).
+                collection("menuCategory").document(menuCategoryName);
+        menuCategorytablesRef.delete();
     }
 
     private void setFloatingActionButtonMethod(){
@@ -148,7 +189,7 @@ public class MenuCategoryActivity extends AppCompatActivity {
                         if (!createPriority.getText().toString().trim().isEmpty()&&
                         !createNewMenuCategory.getText().toString().trim().isEmpty()) {
                             String storeName=readPreferences();
-                            Log.i("SOS",storeName);
+                           
                             HashMap<String, Object> exampleTry=new HashMap<>();
                             Table table =new Table();
                             table.setTable(createNewMenuCategory.getText().toString());

@@ -16,12 +16,12 @@
         "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\extra_row.xml"
     },
     {
-        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_new_printer_item.xml.flat",
-        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_new_printer_item.xml"
-    },
-    {
         "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_restore_user_password.xml.flat",
         "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\activity_restore_user_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_create_new_printer_item.xml.flat",
+        "source": "C:\\Users\\stefanos\\Desktop\\Order\\app\\src\\main\\res\\layout\\create_new_printer_item.xml"
     },
     {
         "merged": "C:\\Users\\stefanos\\Desktop\\Order\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_items_access_from_individual_table.xml.flat",

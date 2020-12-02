@@ -29,19 +29,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"/>
 
-            <Button
-                android:id="@+id/emptyTable"
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_margin="15sp"
-                android:background="@drawable/ic_empty_table"
-                android:padding="20sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                >
 
-
-            </Button>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

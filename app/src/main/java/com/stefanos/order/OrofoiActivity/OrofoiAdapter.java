@@ -43,9 +43,9 @@ public class OrofoiAdapter  extends FirestoreRecyclerAdapter<OrofoiItem, OrofoiA
         getSnapshots().getSnapshot(position).getReference().delete();
     }
 
-    public class OrofoiHolder extends RecyclerView.ViewHolder {
+    public static class  OrofoiHolder extends RecyclerView.ViewHolder {
 
-        TextView orofoi;
+       static TextView orofoi;
         CardView cardView;
         public OrofoiHolder(@NonNull View itemView) {
             super(itemView);

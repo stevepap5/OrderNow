@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.stefanos.order.R;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -89,12 +91,53 @@ public class OrofoiActivity extends AppCompatActivity {
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
 
+                deleteTables(OrofoiAdapter.OrofoiHolder.orofoi.getText().toString());
                 orofoiAdapter.deleteItem(viewHolder.getAdapterPosition());
 
             }
         }).attachToRecyclerView(recyclerView);
 
         setFloatingActionButtonMethod();
+    }
+
+    private void deleteTables(final String orofos) {
+
+        final String storeName = readPreferences();
+
+        final CollectionReference tablesRef = db.collection("store").document(storeName).
+                collection("orofoi").document(orofos).collection("tables");
+
+        tablesRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+              if(task.isSuccessful()){
+                  int i=0;
+                  for(DocumentSnapshot documentSnapshot:task.getResult()){
+                      Log.i("tableName2",String.valueOf(i));
+                      i++;
+                      if (String.valueOf(documentSnapshot.get("status")).equals("notpaid")){
+
+                          CollectionReference tablesRef2 = db.collection("store").document(storeName).
+                                  collection("orofoi").document(orofos).collection("tables").
+                                  document(String.valueOf(documentSnapshot.get("table"))).collection(String.valueOf(documentSnapshot.get("table")));
+
+                         tablesRef2.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                              @Override
+                              public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if(task.isSuccessful()){
+                                    for(DocumentSnapshot documentSnapshot1:task.getResult()){
+                                        documentSnapshot1.getReference().delete();
+                                    }
+                                }
+                              }
+                          });
+                      }
+                     documentSnapshot.getReference().delete();
+                  }
+              }
+            }
+        });
+
     }
 
     @Override

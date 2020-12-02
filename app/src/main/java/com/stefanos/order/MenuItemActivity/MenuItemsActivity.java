@@ -13,6 +13,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -113,14 +114,58 @@ public class MenuItemsActivity extends AppCompatActivity {
 
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-
-                menuItemAdapter.deleteItem(viewHolder.getAdapterPosition());
+                deleteExtraAndXwris(MenuItemAdapter.MenuItemHolder.nameTextView.getText().toString());
+//                menuItemAdapter.deleteItem(viewHolder.getAdapterPosition());
             }
         }).attachToRecyclerView(recyclerView);
 
 
         setFloatingActionButtonMethod();
 
+    }
+
+    private void deleteExtraAndXwris(String menuItemName) {
+        Log.i("menuItemName",menuItemName);
+        String storeName = readPreferences();
+        CollectionReference tablesRefExtra = db.collection("store").document(storeName).
+                collection("menuCategory").document(readPreferencesMenuCategory()).
+                collection("menuItems").document(menuItemName).collection(menuItemName+"extra");
+
+        tablesRefExtra.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if(task.isSuccessful()){
+                    for(DocumentSnapshot documentSnapshot:task.getResult()){
+                        documentSnapshot.getReference().delete();
+                    }
+                }
+            }
+        });
+        CollectionReference tablesRefXwris = db.collection("store").document(storeName).
+                collection("menuCategory").document(readPreferencesMenuCategory()).
+                collection("menuItems").document(menuItemName).collection(menuItemName+"xwris");
+
+        tablesRefXwris.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if(task.isSuccessful()){
+                    for(DocumentSnapshot documentSnapshot:task.getResult()){
+                        documentSnapshot.getReference().delete();
+                    }
+                }
+            }
+        });
+        DocumentReference tablesRef = db.collection("store").document(storeName).
+                collection("menuCategory").document(readPreferencesMenuCategory()).
+                collection("menuItems").document(menuItemName);
+        tablesRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()){
+                    task.getResult().getReference().delete();
+                }
+            }
+        });
     }
 
 
